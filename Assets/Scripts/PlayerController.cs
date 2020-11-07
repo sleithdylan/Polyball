@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
     // Physics
     void FixedUpdate()
     {
-        Vector3 movement = new Vector3(movementX, 0.0f, movementY);
-        rb.AddForce(movement * speed);
+        //Vector3 movement = new Vector3(movementX, 0.0f, movementY);
+        //rb.AddForce(movement * speed);
     }
 }
