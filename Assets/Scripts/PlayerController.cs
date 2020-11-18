@@ -2,16 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
     // Public variables
     public float speed = 0;
+    public TextMeshProUGUI countText;
     public Transform CameraPivot;
     public Transform cam;
 
     // Private variables
     private Rigidbody rb;
+    private int count;
     private float movementX;
     private float movementY;
 
@@ -22,6 +25,9 @@ public class PlayerController : MonoBehaviour
     {
         // Sets variable "rb" to Rigidbody Component which is attached to the player
         rb = GetComponent<Rigidbody>();
+
+        count = 0;
+        SetCountText();
     }
 
     void OnMove(InputValue movementValue)
@@ -33,6 +39,11 @@ public class PlayerController : MonoBehaviour
         movementX = movementVector.x;
         // Y movementValue
         movementY = movementVector.y;
+    }
+
+    void SetCountText()
+    {
+        countText.text = "Coins Collected: " + count.ToString();
     }
 
     void Update()
@@ -66,6 +77,8 @@ public class PlayerController : MonoBehaviour
         {
             // Disable game objects
             other.gameObject.SetActive(false);
+            count = count + 1;
+            SetCountText();
         }
     }
 }
