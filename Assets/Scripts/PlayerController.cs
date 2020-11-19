@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
 
     void SetCountText()
     {
-        countText.text = "Coins Collected: " + count.ToString();
+        countText.text = " <sprite=0> " + count.ToString();
     }
 
     void Update()
