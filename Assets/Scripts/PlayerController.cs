@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public TextMeshProUGUI countText;
     public Transform CameraPivot;
     public Transform cam;
+    public GameObject prefabCoinHitParticle;
 
     // Private variables
     private Rigidbody rb;
@@ -79,6 +80,13 @@ public class PlayerController : MonoBehaviour
             other.gameObject.SetActive(false);
             count = count + 1;
             SetCountText();
+        }
+        if (other.name == "PickUp") 
+        {
+            // Play coin collect sound
+            GetComponent<AudioSource>().Play();
+            // Create particle effect
+            Instantiate(prefabCoinHitParticle, this.transform.position, Quaternion.identity);
         }
     }
 }

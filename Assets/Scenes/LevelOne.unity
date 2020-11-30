@@ -5589,7 +5589,7 @@ PrefabInstance:
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
       propertyPath: m_Name
-      value: PickUp (2)
+      value: PickUp
       objectReference: {fileID: 0}
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
@@ -8257,7 +8257,7 @@ PrefabInstance:
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
       propertyPath: m_Name
-      value: PickUp (15)
+      value: PickUp
       objectReference: {fileID: 0}
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
@@ -22274,6 +22274,7 @@ GameObject:
   - component: {fileID: 617666177}
   - component: {fileID: 617666179}
   - component: {fileID: 617666178}
+  - component: {fileID: 617666180}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -22387,6 +22388,8 @@ MonoBehaviour:
   countText: {fileID: 526883417}
   CameraPivot: {fileID: 45610472}
   cam: {fileID: 844152402}
+  prefabCoinHitParticle: {fileID: 1933607824282986, guid: 3c87503deada045dfad4b3f34d340ae0,
+    type: 3}
 --- !u!114 &617666179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22418,6 +22421,102 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!82 &617666180
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617666172}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: abcc7be61dd63584bb75cffe2fcf86be, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &618417822
 GameObject:
   m_ObjectHideFlags: 0
@@ -28397,7 +28496,7 @@ PrefabInstance:
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
       propertyPath: m_Name
-      value: PickUp (9)
+      value: PickUp
       objectReference: {fileID: 0}
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
@@ -36183,7 +36282,7 @@ PrefabInstance:
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
       propertyPath: m_Name
-      value: PickUp (3)
+      value: PickUp
       objectReference: {fileID: 0}
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
@@ -37053,7 +37152,7 @@ PrefabInstance:
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
       propertyPath: m_Name
-      value: PickUp (13)
+      value: PickUp
       objectReference: {fileID: 0}
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
@@ -37500,7 +37599,7 @@ PrefabInstance:
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
       propertyPath: m_Name
-      value: PickUp (11)
+      value: PickUp
       objectReference: {fileID: 0}
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
@@ -38017,8 +38116,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1074734638}
-  m_LocalRotation: {x: 0.5156556, y: 0.09943813, z: 0.16113774, w: 0.8356112}
-  m_LocalPosition: {x: 0.0019959607, y: 0.0017290268, z: -0.00092796906}
+  m_LocalRotation: {x: -0.37461284, y: 0.47234786, z: 0.62511086, w: -0.49577123}
+  m_LocalPosition: {x: 0.0024546727, y: -0.0062736636, z: -0.0016731209}
   m_LocalScale: {x: 0.00014285708, y: 0.00014285717, z: 0.00014285714}
   m_Children: []
   m_Father: {fileID: 1314253494}
@@ -41831,7 +41930,7 @@ PrefabInstance:
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
       propertyPath: m_Name
-      value: PickUp (10)
+      value: PickUp
       objectReference: {fileID: 0}
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
@@ -41915,7 +42014,7 @@ PrefabInstance:
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
       propertyPath: m_Name
-      value: PickUp (12)
+      value: PickUp
       objectReference: {fileID: 0}
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
@@ -56871,7 +56970,7 @@ PrefabInstance:
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
       propertyPath: m_Name
-      value: PickUp (14)
+      value: PickUp
       objectReference: {fileID: 0}
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
@@ -57993,8 +58092,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1570100915}
-  m_LocalRotation: {x: 0.021946443, y: -0.22012529, z: 0.0049535236, w: 0.9752121}
-  m_LocalPosition: {x: 15.773358, y: -7.4256926, z: -57.61238}
+  m_LocalRotation: {x: 0.04839799, y: 0.83469194, z: 0.07432431, w: -0.54352826}
+  m_LocalPosition: {x: 0.71149826, y: -7.863482, z: 3.032619}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -63074,7 +63173,7 @@ PrefabInstance:
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
       propertyPath: m_Name
-      value: PickUp (7)
+      value: PickUp
       objectReference: {fileID: 0}
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
@@ -63525,7 +63624,7 @@ PrefabInstance:
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
       propertyPath: m_Name
-      value: PickUp (6)
+      value: PickUp
       objectReference: {fileID: 0}
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
@@ -64954,7 +65053,7 @@ PrefabInstance:
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
       propertyPath: m_Name
-      value: PickUp (8)
+      value: PickUp
       objectReference: {fileID: 0}
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
@@ -65377,7 +65476,7 @@ PrefabInstance:
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
       propertyPath: m_Name
-      value: PickUp (4)
+      value: PickUp
       objectReference: {fileID: 0}
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
@@ -70116,7 +70215,7 @@ PrefabInstance:
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
       propertyPath: m_Name
-      value: PickUp (1)
+      value: PickUp
       objectReference: {fileID: 0}
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
@@ -70852,7 +70951,7 @@ PrefabInstance:
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
       propertyPath: m_Name
-      value: PickUp (5)
+      value: PickUp
       objectReference: {fileID: 0}
     - target: {fileID: 3374557395830339517, guid: d95b5ef8e01453f40b84b0541c87c8d8,
         type: 3}
