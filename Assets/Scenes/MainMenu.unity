@@ -38239,7 +38239,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: f1954a799a605524bac9a91ffd838bfb, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -65027,8 +65027,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754183834}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.06545078, y: 0.098003246, z: -0.046847835}
+  m_LocalRotation: {x: 0.61763096, y: 0.16595763, z: 0.19948965, w: 0.7424244}
+  m_LocalPosition: {x: 0.0013887661, y: -0.0017382797, z: -0.0017600061}
   m_LocalScale: {x: 0.00014285708, y: 0.00014285717, z: 0.00014285714}
   m_Children: []
   m_Father: {fileID: 1240845981}
@@ -71210,7 +71210,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1911712083}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: LevelOneScene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

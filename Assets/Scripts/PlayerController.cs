@@ -46,9 +46,11 @@ public class PlayerController : MonoBehaviour
 
     void SetCountText()
     {
+        // Set count text
         countText.text = " <sprite=0> " + count.ToString();
         if(count >= 17)
         {
+            // Win state
             winTextObject.SetActive(true);
         }
     }

@@ -50,9 +50,25 @@ public class GamePauseMenu : MonoBehaviour
         AudioListener.volume = 0;
     }
 
+    public void LoadGame()
+    {
+        Debug.Log("Load menu...");
+        // Hide Pause Menu
+        PauseMenuUI.SetActive(false);
+        // Unfreeze Game
+        Time.timeScale = 1;
+        // Game Not Paused
+        GameIsPaused = false;
+        // Turn on audio
+        AudioListener.volume = 1f;
+        // Load Main Menu
+        SceneManager.LoadScene("MainMenu");
+        
+    }
+
     public void QuitGame()
     {
-        Debug.Log("You quit the game!");
+        // Quit game
         Application.Quit();    
     }
 }
