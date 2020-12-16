@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public Transform CameraPivot;
     public Transform cam;
     public GameObject prefabCoinHitParticle;
+    public GameObject winTextObject;
 
     // Private variables
     private Rigidbody rb;
@@ -29,6 +30,7 @@ public class PlayerController : MonoBehaviour
 
         count = 0;
         SetCountText();
+        winTextObject.SetActive(false);
     }
 
     void OnMove(InputValue movementValue)
@@ -45,6 +47,10 @@ public class PlayerController : MonoBehaviour
     void SetCountText()
     {
         countText.text = " <sprite=0> " + count.ToString();
+        if(count >= 17)
+        {
+            winTextObject.SetActive(true);
+        }
     }
 
     void Update()
